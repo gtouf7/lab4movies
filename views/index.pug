@@ -1,0 +1,10 @@
+extends common/layout
+
+block layout-content 
+  .main-content 
+    h1.page-title Lab 4 Movies
+    each movie in movies 
+        h2.movieName #{movie.title}
+        p.movieInfo  #{movie.year}
+        p.movieInfo #{movie.rating}
+    
